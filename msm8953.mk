@@ -405,6 +405,7 @@ PRODUCT_PACKAGES += \
     hostapd \
     dhcpcd.conf \
     wificond \
+    WifiOverlay \
     wpa_supplicant \
     wpa_supplicant.conf
 
