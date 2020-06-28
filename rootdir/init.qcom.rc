@@ -633,6 +633,7 @@ service vendor.audio-hal-2-0 /vendor/bin/hw/android.hardware.audio@2.0-service
 
 on property:dev.bootcomplete=1
     swapon_all /vendor/etc/fstab.qcom
+    restart ril-daemon
 
 
 service logger /system/bin/logcat -b all -D -f /cache/boot_log.txt
@@ -650,3 +651,6 @@ on post-fs-data
 on property:sys.boot_completed=1
     # Stop the logger service
     stop logger
+
+   
+
