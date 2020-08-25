@@ -227,6 +227,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 ro.surface_flinger.supports_background_blur=1 \
 ro.sf.blurs_are_expensive=1
 
+PRODUCT_PROPERTY_OVERRIDES += \
+debug.sf.early_phase_offset_ns=11600000 \
+debug.sf.early_app_phase_offset_ns=11600000 \
+debug.sf.early_gl_phase_offset_ns=3000000 \
+debug.sf.early_gl_app_phase_offset_ns=15000000 \
+debug.sf.phase_offset_threshold_for_next_vsync_ns=11600000
+
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.timed.enable=true \
