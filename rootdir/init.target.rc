@@ -223,7 +223,7 @@ on boot
     # DT2W Node
     chown system system /proc/touchpanel/wakeup_gesture
     chmod 0660 /proc/touchpanel/wakeup_gesture
-
+ 
 service ppd /vendor/bin/mm-pp-dpps
     class late_start
     user system
