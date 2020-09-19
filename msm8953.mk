@@ -299,7 +299,8 @@ PRODUCT_FILES += \
 
 # QMI
 PRODUCT_PACKAGES += \
-    libjson
+    libjson \
+    libjson.vendor
 
 # Ramdisk
 PRODUCT_PACKAGES += \
