@@ -361,6 +361,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
 
+# Shims
+PRODUCT_PACKAGES += \
+    libcutils_shim
+
 # Signapk
 PRODUCT_HOST_PACKAGES += \
     signapk

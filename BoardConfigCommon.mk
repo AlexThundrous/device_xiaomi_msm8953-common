@@ -202,6 +202,10 @@ SELINUX_IGNORE_NEVERALLOWS := true
 # Telephony
 TARGET_USES_ALTERNATIVE_MANUAL_NETWORK_SELECT := true
 
+# Shims
+TARGET_LD_SHIM_LIBS := \
+    /system/product/lib64/libdpmframework.so|libcutils_shim.so
+
 # Treble
 BOARD_VNDK_RUNTIME_DISABLE := true
 BOARD_VNDK_VERSION := current
