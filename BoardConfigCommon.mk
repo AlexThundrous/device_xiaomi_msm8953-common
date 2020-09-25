@@ -204,3 +204,7 @@ TARGET_USES_ALTERNATIVE_MANUAL_NETWORK_SELECT := true
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/msm8953-common/BoardConfigVendor.mk
+
+BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
+
+BUILD_BROKEN_VINTF_PRODUCT_COPY_FILES := true
