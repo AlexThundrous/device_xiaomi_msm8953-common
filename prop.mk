@@ -226,6 +226,7 @@ debug.sf.early_gl_app_phase_offset_ns=15000000
 
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.surface_flinger.supports_background_blur=1 \
+persist.sys.sf.disable_blurs=1 \
 ro.sf.blurs_are_expensive=1
 
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -236,6 +237,7 @@ debug.sf.early.sf.duration=16000000 \
 debug.sf.early.app.duration=16500000 \
 debug.sf.earlyGl.sf.duration=13500000 \
 debug.sf.earlyGl.app.duration=21000000
+
 
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
