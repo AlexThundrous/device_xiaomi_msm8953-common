@@ -419,6 +419,7 @@ PRODUCT_PACKAGES += \
     dhcpcd.conf \
     wificond \
     WifiOverlay \
+    TetheringOverlay \
     wpa_supplicant \
     wpa_supplicant.conf
 
