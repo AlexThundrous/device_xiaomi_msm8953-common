@@ -334,12 +334,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
 
 # Trust HAL
-# PRODUCT_PACKAGES += \
-#    vendor.lineage.trust@1.0-service
+ PRODUCT_PACKAGES += \
+    vendor.lineage.trust@1.0-service
 
 # USB HAL
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.basic
+
 
 # VNDK
 PRODUCT_PACKAGES += \
@@ -391,3 +392,5 @@ PRODUCT_COPY_FILES += \
 # Wi-Fi Display
 PRODUCT_BOOT_JARS += \
     WfdCommon
+PRODUCT_PACKAGES +=
+   vendor.qti.ims.callinfo@1.0::IService

@@ -385,7 +385,7 @@
             <name>IPictureAdjustment</name>
             <instance>default</instance>
         </interface>
-    </hal>
+	    </hal>-->
     <hal format="hidl">
         <name>vendor.lineage.trust</name>
         <transport>hwbinder</transport>
@@ -394,7 +394,7 @@
             <name>IUsbRestrict</name>
             <instance>default</instance>
         </interface>
-    </hal> -->
+    </hal>
     <hal format="hidl">
         <name>vendor.qti.data.factory</name>
         <transport>hwbinder</transport>
@@ -554,7 +554,17 @@
             <name>ITuiComm</name>
             <instance>default</instance>
         </interface>
-    </hal>
+     </hal>
+     <hal format="hidl">
+	<name>vendor.qti.ims.callinfo</name>
+	<transport>hwbinder</transport>
+	<version>1.0</version>
+	<interface>
+	    <name>IService</name>
+            <instance>default</instance>
+        </interface>
+	<fqname>@1.0::IService/default</fqname>
+    </hal>	
     <hal format="hidl">
         <name>vendor.qti.imsrtpservice</name>
         <transport>hwbinder</transport>
