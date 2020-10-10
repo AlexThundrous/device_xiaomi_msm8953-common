@@ -271,6 +271,10 @@ vendor/lib64/libssd.so|bcb7c4213115f2377e0d30dd1a05cae5e88212e4
 vendor/lib64/libprotobuf-cpp-lite.so
 vendor/lib/libprotobuf-cpp-lite.so
 
+# DRM - from lmi V12.0.3.0.QJKMIXM
+vendor/lib64/libops.so|03dc247cbf3e75f8dedf05b779eb65006f7334cd
+vendor/lib64/libspl.so|609af852a498b0a50eb00f2d75913e0fbcbbaee6
+
 # ESE-Powermanager - from LA.UM.8.6.2.r1-07600-89xx.0
 vendor/bin/hw/vendor.qti.esepowermanager@1.0-service|a5b8d74b2374ea757c90bbbe450e34533fb6c137
 vendor/etc/init/vendor.qti.esepowermanager@1.0-service.rc|58a3866ad5a7613d9392c9adb671eaa7825578a2
