@@ -565,6 +565,15 @@
 	    <name>IEsePowerManager</name>
 	    <instance>default</instance>
 	</interface>
-	<fqname>@1.0::IEsePowerManager/default</fqname>
     </hal>
- </manifest>
+    <hal format="hidl">
+	 <name>vendor.qti.hardware.radio.lpa</name>
+	 <transport>hwbinder</transport>
+	 <version>1.0</version>
+	 <interface>
+	     <name>IUimLpa</name>
+	     <instance>UimLpa0</instance>
+	     <instance>UimLpa1</instance>
+         </interface>
+    </hal>
+</manifest>
