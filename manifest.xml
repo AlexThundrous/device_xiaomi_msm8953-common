@@ -480,15 +480,6 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>vendor.qti.hardware.radio.lpa</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IUimLpa</name>
-            <instance>UimLpa0</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
         <name>vendor.qti.hardware.radio.qcrilhook</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
