@@ -589,6 +589,9 @@ on charger
     load_system_props
     start qcom-post-boot
 
+#Starting perf properly                                                         
+    setprop vendor.post_boot.parsed 1
+
 #Mixed HWC versions among targets
 on property:init.svc.surfaceflinger=restarting
     stop  vendor.hwcomposer-2-1
