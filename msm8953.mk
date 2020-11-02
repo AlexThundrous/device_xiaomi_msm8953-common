@@ -272,15 +272,6 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw
 
-# Power
-PRODUCT_PACKAGES += \
-  android.hardware.power-service-qti \
-  power.qcom \
-  android.hardware.power@1.0-impl \
-  android.hardware.power@1.0-service
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
-
 #Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti \
