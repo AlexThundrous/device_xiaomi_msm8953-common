@@ -288,7 +288,7 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.0-service   
     
 PRODUCT_FILES += \
-    $(LOCAL_PATH)/configs/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
+    $(COMMON_PATH)/configs/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
 
 # Properties
 -include device/xiaomi/msm8953-common/prop.mk
