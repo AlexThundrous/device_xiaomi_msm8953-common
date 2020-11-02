@@ -192,10 +192,6 @@ PRODUCT PACKAGES += \
    android.hardware.health@2.0-impl \
    android.hardware.health@2.0-service
 
-# Healthd
-PRODUCT_PACKAGES += \
-    chargeonlymode
-
 # HIDL
 PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
 
