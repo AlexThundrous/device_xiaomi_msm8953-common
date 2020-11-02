@@ -194,8 +194,9 @@ PRODUCT_PACKAGES += \
 
 # HIDL
 PRODUCT_PACKAGES += \
-  android.hidl.base@1.0 \
-  android.hidl.manager@1.0
+    android.hidl.base@1.0 \
+    android.hidl.manager@1.0 \
+    libhidltransport
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -237,10 +238,6 @@ PRODUCT_COPY_FILES += \
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.msm8953
-
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -360,10 +357,6 @@ PRODUCT_PACKAGES += \
 # Thermal
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
-
-# Trust HAL
-# PRODUCT_PACKAGES += \
- #   vendor.lineage.trust@1.0-service
 
 # USB HAL
 PRODUCT_PACKAGES += \
