@@ -420,5 +420,11 @@ PRODUCT_COPY_FILES += \
 # Wi-Fi Display
 PRODUCT_BOOT_JARS += \
     WfdCommon
-PRODUCT_PACKAGES +=
-   vendor.qti.ims.callinfo@1.0::IService
+
+# Xiaomi Parts
+PRODUCT_PACKAGES += \
+    XiaomiParts		  
+
+# OnePlus Gallery
+PRODUCT_PACKAGES += \
+    OnePlusGallery		    
