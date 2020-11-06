@@ -86,18 +86,18 @@ PRODUCT_PACKAGES += \
 	android.hardware.audio@2.0-service \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.audio.effect@5.0-impl \
-	android.hardware.soundtrigger@2.3-impl \
-	audio.a2dp.default \
-	audio.r_submix.default \
-	audio.usb.default \
-	libaudioroute \
-	libaacwrapper \
-	libaudio-resampler \
-	libqcomvisualizer \
-	libqcomvoiceprocessing \
-	libqcompostprocbundle \
-	libvolumelistener \
-	tinymix
+    android.hardware.soundtrigger@2.2-impl \
+    audio.a2dp.default \
+    audio.r_submix.default \
+    audio.usb.default \
+    libaudioroute \
+    libaacwrapper \
+    libaudio-resampler \
+    libqcomvisualizer \
+    libqcomvoiceprocessing \
+    libqcompostprocbundle \
+    libvolumelistener \
+    tinymix
 
 # Audio configuration
 PRODUCT_COPY_FILES += \
