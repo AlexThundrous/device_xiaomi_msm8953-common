@@ -100,7 +100,7 @@ void set_avoid_gfxaccel_config() {
 
     if (sys.totalram <= 3072ull * 1024 * 1024) {
         // Reduce memory footprint
-        SetProperty("ro.config.avoid_gfx_accel", "true");
+        property_override("ro.config.avoid_gfx_accel", "true");
     }
 }
 
