@@ -62,3 +62,4 @@ Return<bool> KeyDisabler::setEnabled(bool enabled) {
 }  // namespace touch
 }  // namespace lineage
 }  // namespace vendor
+

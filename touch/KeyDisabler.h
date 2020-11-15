@@ -46,3 +46,4 @@ class KeyDisabler : public IKeyDisabler {
 }  // namespace vendor
 
 #endif  // VENDOR_LINEAGE_TOUCH_V1_0_KEYDISABLER_H
+
