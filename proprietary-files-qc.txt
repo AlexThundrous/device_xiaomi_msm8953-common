@@ -407,6 +407,10 @@ vendor/firmware/a506_zap.mdt
 vendor/firmware/a530_pfp.fw
 vendor/firmware/a530_pm4.fw
 
+# Health
+vendor/bin/hw/android.hardware.health@2.0-service
+vendor/etc/init/android.hardware.health@2.0-service.rc
+
 # HotwordEnrollment | crosshatch RPB3.200720.005-6705141
 -product/priv-app/HotwordEnrollmentXGoogleWCD9340/HotwordEnrollmentXGoogleWCD9340.apk|c96a20be78b43efdadab79e1316b72c9839b4d27
 -product/priv-app/HotwordEnrollmentOKGoogleWCD9340/HotwordEnrollmentOKGoogleWCD9340.apk|abd5ea62af471a19a51096702a5681088a4c19c3
