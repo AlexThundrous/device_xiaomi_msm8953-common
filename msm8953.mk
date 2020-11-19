@@ -195,11 +195,6 @@ PRODUCT_PACKAGES += \
     android.hidl.manager@1.0 \
     libhidltransport
 
-# HIDL
-PRODUCT_PACKAGES += \
-   libhidltransport \
-   libhidltransport.vendor
-
 # HotwordEnrollement
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
