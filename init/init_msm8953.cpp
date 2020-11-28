@@ -105,14 +105,5 @@ void set_avoid_gfxaccel_config() {
 
 void vendor_load_properties()
 {
-    check_device();
-	set_avoid_gfxaccel_config();
-
-    property_override("dalvik.vm.heapstartsize", heapstartsize);
-    property_override("dalvik.vm.heapgrowthlimit", heapgrowthlimit);
-    property_override("dalvik.vm.heapsize", heapsize);
-    property_override("dalvik.vm.heaptargetutilization", heaptargetutilization);
-    property_override("dalvik.vm.heapminfree", heapminfree);
-
     load_dalvik_properties();
 }
