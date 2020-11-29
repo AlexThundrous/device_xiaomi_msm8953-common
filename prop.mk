@@ -218,17 +218,10 @@ persist.vendor.cne.logging.qxdm=3974
 # SurfaceFlinger
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 ro.surface_flinger.protected_contents=true
-
-PRODUCT_PROPERTY_OVERRIDES += \
-debug.sf.early_phase_offset_ns=1500000 \
-debug.sf.early_app_phase_offset_ns=1500000 \
-debug.sf.early_gl_phase_offset_ns=3000000 \
-debug.sf.early_gl_app_phase_offset_ns=15000000
-
-PRODUCT_PROPERTY_OVERRIDES += \
-ro.surface_flinger.supports_background_blur=1 \
-persist.sys.sf.disable_blurs=1 \
-ro.sf.blurs_are_expensive=1
+ro.surface_flinger.set_display_power_timer_ms=10000 \
+ro.surface_flinger.set_idle_timer_ms=9000 \
+ro.surface_flinger.set_touch_timer_ms=5000 \
+ro.surface_flinger.use_smart_90_for_video=true
 
 PRODUCT_PROPERTY_OVERRIDES += \
 debug.sf.use_phase_offsets_as_durations=1 \
