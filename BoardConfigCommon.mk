@@ -140,6 +140,8 @@ TARGET_FS_CONFIG_GEN := $(VENDOR_PATH)/config.fs
 # HIDL
 DEVICE_MANIFEST_FILE := $(VENDOR_PATH)/manifest.xml
 DEVICE_MATRIX_FILE   := $(VENDOR_PATH)/compatibility_matrix.xml
+PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
+
 
 # HWUI
 HWUI_COMPILE_FOR_PERF := true
@@ -150,9 +152,6 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_msm8953
 
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
-
-# Memory Config
-MALLOC_SVELTE := true
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
@@ -192,6 +191,9 @@ endif
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy/vendor
 SELINUX_IGNORE_NEVERALLOWS := true
+
+# SurfaceFlinger
+TARGET_USE_AOSP_SURFACEFLINGER := true
 
 # Thermal
 #TARGET_THERMAL_HAL := true
