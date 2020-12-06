@@ -39,11 +39,8 @@
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
 #include <sys/_system_properties.h>
 
-#include "vendor_init.h"
 #include "property_service.h"
-
-#define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
-#include <sys/_system_properties.h>
+#include "vendor_init.h"
 
 void property_override(char const prop[], char const value[])
 {
@@ -66,11 +63,11 @@ void property_override_multifp(char const buildfp[], char const systemfp[],
 
 void load_dalvik_properties()
 {
-    struct sysinfo sys;
+	struct sysinfo sys;
 
-    sysinfo(&sys);
+	sysinfo(&sys);
 
-    if (sys.totalram > 3072ull * 1024 * 1024)
+	if (sys.totalram > 3072ull * 1024 * 1024)
 	{
 		// from - phone-xxhdpi-4096-dalvik-heap.mk
 		property_override("dalvik.vm.heapstartsize", "8m");
@@ -91,18 +88,6 @@ void load_dalvik_properties()
 		property_override("dalvik.vm.heapminfree", "512k");
 	}
 }
-
-void property_override(char const prop[], char const value[], bool add = true)
-{
-    auto pi = (prop_info *) __system_property_find(prop);
-
-    if (pi != nullptr) {
-        __system_property_update(pi, value, strlen(value));
-    } else if (add) {
-        __system_property_add(prop, strlen(prop), value, strlen(value));
-    }
-}
-
 
 void vendor_load_properties()
 {
