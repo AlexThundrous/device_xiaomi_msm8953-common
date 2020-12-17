@@ -53,12 +53,6 @@ sys.vendor.shutdown.waittime=500
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.kernel.ebpf.supported=true
 
-# Blur
-PRODUCT_PRODUCT_PROPERTIES += \
-ro.sf.blurs_are_expensive=1 \
-ro.surface_flinger.supports_background_blur=1 \
-debug.sf.disable_backpressure=1
-
 # Charger
 PRODUCT_PRODUCT_PROPERTIES += \
 ro.charger.enable_suspend=true
@@ -247,12 +241,6 @@ net.tcp.2g_init_rwnd=10
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.vendor.usb.config.extra=none
 
-# USB debugging
-PRODUCT_PROPERTY_OVERRIDES += \
-persist.sys.usb.config=mtp,adb \
-ro.adb.secure=0 \
-ro.secure=0 \
-
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
 wifi.interface=wlan0
@@ -261,14 +249,3 @@ wifi.interface=wlan0
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 persist.device_config.runtime_native.usap_pool_enabled=true
 
-# Properties
-PRODUCT_PROPERTY_OVERRIDES += \
-ro.config.fha_enable=true \
-ro.sys.fw.bg_apps_limit=32 \
-ro.config.dha_cached_max=16 \
-ro.config.dha_empty_max=42 \
-ro.config.dha_empty_init=32 \
-ro.config.dha_lmk_scale=0.545 \
-ro.config.dha_th_rate=2.3 \
-ro.config.sdha_apps_bg_max=64 \
-ro.config.sdha_apps_bg_min=8
