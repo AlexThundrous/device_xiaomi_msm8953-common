@@ -463,11 +463,7 @@ PRODUCT_COPY_FILES += \
 
 # Wi-Fi Display
 PRODUCT_BOOT_JARS += \
-    WfdCommon
-
-# Xiaomi Parts
-PRODUCT_PACKAGES += \
-    XiaomiParts		  
+    WfdCommon	  
 
 #Gcam 
 PRODUCT_PACKAGES += \
