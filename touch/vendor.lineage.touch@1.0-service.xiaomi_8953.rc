@@ -2,4 +2,3 @@ service vendor.touch-hal-1-0-xiaomi_8953 /vendor/bin/hw/vendor.lineage.touch@1.0
     class hal
     user system
     group system
-

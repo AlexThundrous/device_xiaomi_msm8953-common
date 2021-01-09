@@ -28,3 +28,4 @@ cc_binary {
         "libutils",
         "vendor.lineage.touch@1.0",
     ],
+}
