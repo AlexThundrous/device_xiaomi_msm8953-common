@@ -43,7 +43,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
 bluetooth.hfp.client=1 \
 qcom.bluetooth.soc=smd \
 ro.bluetooth.hfp.ver=1.7 \
-ro.qualcomm.bt.hci_transport=smd
+ro.qualcomm.bt.hci_transport=smd \
+persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxhd-aac-ldac \
+persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac \
+persist.bluetooth.a2dp_offload.disabled=true \
+persist.vendor.qcom.bluetooth.enable.splita2dp=false \
+ro.bluetooth.a2dp_offload.supported=false\
+persist.vendor.qcom.bluetooth.soc=pronto \
+vendor.qcom.bluetooth.soc=pronto
+
 
 # Boot
 PRODUCT_PROPERTY_OVERRIDES += \
