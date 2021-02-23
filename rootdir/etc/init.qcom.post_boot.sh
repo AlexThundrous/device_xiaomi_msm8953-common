@@ -4392,5 +4392,3 @@ echo 20 > /dev/cpuset/camera-daemon/uclamp.max
 echo 0 > /dev/cpuset/camera-daemon/uclamp.min
 echo 0  > /dev/cpuset/camera-daemon/uclamp.latency_sensitive
 
-#fake-enforcing
-echo 2 > /sys/fs/selinux/enforce
